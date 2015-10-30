@@ -1,0 +1,497 @@
+[Sep 28 2015 16:26:17.000000 - ERROR] POST /api/adwords/cm/v201506/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.12, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 445
+Authorization: Bearer ya29._AHJB-mcFkvaY7Dj8retBBRj_J0q0kXFBAEPxAfSEd3ouw10fOFa9sVMw8oCzanBv_qO
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201506">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>147-552-5332</ns1:clientCustomerId>
+      <ns1:developerToken>WjIeZkyJ3ekDJbWSt1hDsw</ns1:developerToken>
+      <ns1:userAgent>Smart (AwApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.5.9-1ubuntu4.12)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 28 Sep 2015 10:56:16 GMT
+Expires: Mon, 28 Sep 2015 10:56:16 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 517
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+      <requestId>000520cc8bebdcc80a4cab67de0d08c4</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>287</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+          <message>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>&lt;null&gt;</trigger>
+            <errorString>QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>DEVELOPER_TOKEN_NOT_APPROVED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 28 2015 17:29:59.000000 - ERROR] POST /api/adwords/cm/v201506/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.12, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 445
+Authorization: Bearer ya29._AGlTDfsjodyn7mkmMBYkXnVsxi-NZeZTXbLf3jfEIxdg8fsB7HW__95JK04wWA1ZAQO
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201506">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>147-552-5332</ns1:clientCustomerId>
+      <ns1:developerToken>WjIeZkyJ3ekDJbWSt1hDsw</ns1:developerToken>
+      <ns1:userAgent>Smart (AwApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.5.9-1ubuntu4.12)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 28 Sep 2015 11:59:58 GMT
+Expires: Mon, 28 Sep 2015 11:59:58 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 519
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+      <requestId>000520cd6fbd90400abf98c28a090f33</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>121</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+          <message>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>&lt;null&gt;</trigger>
+            <errorString>QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>DEVELOPER_TOKEN_NOT_APPROVED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 28 2015 18:01:17.000000 - ERROR] POST /api/adwords/cm/v201506/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.12, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 445
+Authorization: Bearer ya29._AFV7oWgw2wCv7D2UTmu-z01k4ZFtrat1e9rn0FAGupYUuz2Gj8yB9esMASvVmbn-cgV
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201506">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>147-552-5332</ns1:clientCustomerId>
+      <ns1:developerToken>WjIeZkyJ3ekDJbWSt1hDsw</ns1:developerToken>
+      <ns1:userAgent>Smart (AwApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.5.9-1ubuntu4.12)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 28 Sep 2015 12:31:16 GMT
+Expires: Mon, 28 Sep 2015 12:31:16 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 517
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+      <requestId>000520cddfb006a80abfa0d4f50a4dde</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>120</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+          <message>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>&lt;null&gt;</trigger>
+            <errorString>QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>DEVELOPER_TOKEN_NOT_APPROVED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 28 2015 18:29:19.000000 - ERROR] POST /api/adwords/cm/v201506/AdGroupService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.12, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 507
+Authorization: Bearer ya29._AEBjES458R9UWn6PRV7n2EHhtF1YYCLWDdNp7RhUlr3WfW-Rr5bC7rvdgvB18TO65pk
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201506">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>147-552-5332</ns1:clientCustomerId>
+      <ns1:developerToken>WjIeZkyJ3ekDJbWSt1hDsw</ns1:developerToken>
+      <ns1:userAgent>Smart (AwApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.5.9-1ubuntu4.12)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:predicates>
+          <ns1:field>CampaignId</ns1:field>
+          <ns1:operator>IN</ns1:operator>
+          <ns1:values>INSERT_CAMPAIGN_ID_HERE</ns1:values>
+        </ns1:predicates>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 28 Sep 2015 12:59:19 GMT
+Expires: Mon, 28 Sep 2015 12:59:19 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 520
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+      <requestId>000520ce43f75a080abf8c440a0580f3</requestId>
+      <serviceName>AdGroupService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>246</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+          <message>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>&lt;null&gt;</trigger>
+            <errorString>QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>DEVELOPER_TOKEN_NOT_APPROVED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 29 2015 12:16:17.000000 - ERROR] POST /api/adwords/cm/v201506/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.12, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 445
+Authorization: Bearer ya29._QH-nta5nvdpGZ7LqjVZ8f31feE0iiVZiQvUMkN3wHlcoQdhSnFtI0pgIMq8TL0OhVQagA
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201506">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>147-552-5332</ns1:clientCustomerId>
+      <ns1:developerToken>WjIeZkyJ3ekDJbWSt1hDsw</ns1:developerToken>
+      <ns1:userAgent>Smart (AwApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.5.9-1ubuntu4.12)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Tue, 29 Sep 2015 06:46:17 GMT
+Expires: Tue, 29 Sep 2015 06:46:17 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 519
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+      <requestId>000520dd2bbf55300abfc7c3fd099840</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>173</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+          <message>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>&lt;null&gt;</trigger>
+            <errorString>QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>DEVELOPER_TOKEN_NOT_APPROVED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Sep 29 2015 13:27:31.000000 - ERROR] POST /api/adwords/cm/v201506/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.9-1ubuntu4.12, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 445
+Authorization: Bearer ya29._QH8OPI_wEiQmmwayMSmpTtubaguEkAk0IP0MHLZde4HVuAcx0oryKZK8xBQD6fOBZfeBg
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201506">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>147-552-5332</ns1:clientCustomerId>
+      <ns1:developerToken>WjIeZkyJ3ekDJbWSt1hDsw</ns1:developerToken>
+      <ns1:userAgent>Smart (AwApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.5.9-1ubuntu4.12)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:get>
+      <ns1:serviceSelector>
+        <ns1:fields>Id</ns1:fields>
+        <ns1:fields>Name</ns1:fields>
+        <ns1:ordering>
+          <ns1:field>Name</ns1:field>
+          <ns1:sortOrder>ASCENDING</ns1:sortOrder>
+        </ns1:ordering>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns1:serviceSelector>
+    </ns1:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Tue, 29 Sep 2015 07:57:31 GMT
+Expires: Tue, 29 Sep 2015 07:57:31 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 516
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+      <requestId>000520de2a81afa00abfd6ca9a0710de</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>get</methodName>
+      <operations>0</operations>
+      <responseTime>113</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201506">
+          <message>[QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED @ ; trigger:'&lt;null&gt;']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuotaCheckError">
+            <fieldPath/>
+            <trigger>&lt;null&gt;</trigger>
+            <errorString>QuotaCheckError.DEVELOPER_TOKEN_NOT_APPROVED</errorString>
+            <ApiError.Type>QuotaCheckError</ApiError.Type>
+            <reason>DEVELOPER_TOKEN_NOT_APPROVED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
